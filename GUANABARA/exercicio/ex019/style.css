@@ -1,0 +1,39 @@
+@charset "utf-8";
+ /*
+    Identificador
+     Em HTML é id = CSS é #
+     Em HTML é class = CSS é .
+
+     Só pode ter um id por arquivo HTML
+     Já class podem ter várias
+
+ */
+body{
+    background-color: rgb(200, 255, 237);
+    font-family: Arial, Helvetica, sans-serif;
+}
+h1{
+    color: rgb(6, 107, 77);
+}
+h1#principal{
+    background-color: rgb(5, 145, 103);
+    color: white;
+    text-align: center;
+}
+h2{
+    color: rgb(26, 197, 146);
+}
+.basico{
+    color: blue;
+}
+
+.intermediario{
+    color: rgb(142, 28, 146);
+}
+
+.avancado{
+    color: brown;
+}
+.destaque{
+    background-color: rgb(151, 199, 177);
+}
