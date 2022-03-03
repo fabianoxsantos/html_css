@@ -1,12 +1,106 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="PT-BR">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=Grids, initial-scale=1.0">
-    <title>Document</title>
+    <title>Grids</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: blue;
+        }
+        .wrapper{
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr 1fr;
+            grid-template-rows: 1fr 3fr 2fr 1fr;
+            grid-row-gap: 20px;
+            grid-column-gap: 20px;
+            padding: 50px;
+            
+
+        }
+        .box1{
+            border: 1px solid red;
+            background: lightcyan;
+            padding: 10px;
+            grid-column-start: 1;
+            grid-column-end: 5;
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }
+        .box2{
+            border: 1px solid red;
+            background: lightcyan;
+            padding: 10px;
+            grid-column-start: 2;
+            grid-column-end: 5;
+            grid-row-start: 3;
+            grid-row-end: 5;
+        }
+            
+        
+        .box3{
+            border: 1px solid red;
+            background: lightcyan;
+            padding: 10px;
+            grid-column-start: 2;
+            grid-column-end: 3;
+            
+        }
+        .box4{
+            border: 1px solid red;
+            background: lightcyan;
+            padding: 10px;
+            grid-column-start: 3;
+            grid-column-end: 5;
+            
+        }
+        .box5{
+            background: rgb(195, 238, 5);
+            padding: 10px;
+            grid-column-start: 1;
+            grid-column-end: 1;
+            grid-row-start: 5;
+            grid-row-end: 6;
+            
+            
+        }
+        .box6{
+            border: 1px solid red;
+            padding: 10px;
+            grid-column-start: 1;
+            grid-column-end: 1;
+            grid-row-start: 3;
+            grid-row-end: 5;
+            
+        }
+        .imagem{
+            background-image: url(https://i2.wp.com/files.agro20.com.br/uploads/2020/02/%C3%A1guia-3.jpg?resize=600%2C338&ssl=1);
+            background-size: cover;
+            background-repeat: no-repeat;
+            grid-column-start: 2;
+            grid-column-end: 5;
+            grid-row-start: 5;
+            grid-row-end: 20;
+
+        }
+        
+
+    </style>
 </head>
+
 <body>
-    
+    <div class="wrapper">
+        <div class="box1">HOME</div>
+        <div class="box2">CONTATO</div>
+        <div class="box3">PRODUTOS</div>
+        <div class="box4">SOBRE</div>
+        <div class="box5">COMPRAR</div>
+        <div class="box6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima eius beatae tempore quasi aliquid ipsum possimus, natus numquam aut reiciendis sit rem earum ad ab sapiente veritatis corporis harum? Beatae.</div>
+        <div class="imagem"></div>
+     </div>
 </body>
 </html>
