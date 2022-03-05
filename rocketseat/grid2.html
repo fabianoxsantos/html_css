@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid</title>
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+
+        section{
+            display: grid;
+            grid-template-columns: 200px 2fr 1fr;
+            grid-template-rows: 20vh 75vh 5vh;
+            grid-template-areas: "h h h"
+                                 "n m a"
+                                 "f f f"
+
+        }
+
+        header{
+            background-color: aqua;
+            grid-area: h;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            
+
+        }
+
+        header img{
+            height: 50%;
+            padding-left: 25px;
+     
+        }
+
+        .social{
+            color: blue;
+        }
+
+        nav{
+            background-color: blueviolet;
+            grid-area: n;
+            padding: 10px;
+            padding-top: 40px;
+            display: flex;
+            flex-direction: column;
+
+        }
+
+        main{
+            background-image: url(https://i0.wp.com/abglt.org.br/wp-content/uploads/2020/10/wallpaper-pc1-scaled-1.jpg?fit=2560%2C1440&ssl=1);
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            grid-area: m;
+
+        }
+
+        aside{
+            background-color: rgb(243, 186, 100);
+            grid-area: a;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            align-items: center;
+            
+            
+
+
+        }
+        aside > .botao{
+            width: 150px;
+            height: 150px;
+            background-color: white;
+            border-radius: 10px;
+            margin: 10px;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: center;
+            padding-top: 20px;
+        }
+
+        footer{
+            background-color: chocolate;
+            grid-area: f;
+
+        }
+        a{
+            font-family: Arial, Helvetica, sans-serif;
+            color: white;
+            padding: 10px;
+            text-decoration: none;
+
+
+        }
+    </style>
+</head>
+<body>
+    <section>
+        <header>
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/4/4e/Playstation_logo_colour.svg/1280px-Playstation_logo_colour.svg.png" alt="logoPS2">
+        </header>
+        <nav>
+            <a href="#">HOME</a>
+            <a href="#">SOBRE</a>
+            <a href="#">PRODUTOS</a>
+            <a href="#">CONTATOS</a>
+        
+        </nav>
+        <main></main>
+        <aside>
+            <div class="botao">A</div>
+            <div class="botao">B</div>
+            <div class="botao">C</div>
+            <div class="botao">D</div>
+        </aside>
+        <footer></footer>
+    </section>
+</body>
+</html>
