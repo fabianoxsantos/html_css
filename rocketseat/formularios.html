@@ -4,10 +4,140 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Formulário</title>
+    <title>Formulários</title>
+    <style>
+        body{
+            height:  50vh;
+            font-family: arial;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+           
+            
+        }
+        button{
+            width: 150px;
+            background-color: aqua;
+            color: blue;
+            border: none;
+            border-radius: 20px;
+            padding: 10px;
+            font-size: 1.2em;
+
+        }
+
+        button:hover{
+            width: 150px;
+            background-color: rgb(14, 190, 190);
+            color: rgb(255, 255, 255);
+            border: none;
+            border-radius: 20px;
+            padding: 10px;
+            font-size: 1.2em;
+
+        }
+    </style>
     
 </head>
+<body>
 
+<!--  Elemento <form>
+
+- Elemento que define o formulário
+
+- Atributos básicos
+    action=" " -    local onde os dados serão eviados, 
+                    caso esteja vazio os dados irão para a mesma página
+    method=" " -    verbo de tipo de envio
+        GET - dados enviados para a página e visíveis
+        POST - dados enviados para outro local e são escondidos
+
+-->
+
+<form action="" method="GET">
+
+</form>
+
+
+<!--  Elemento <fieldset>
+    
+    - Agrupamento de campos em comum
+    - Campos com mesmo propósito
+    - Boa semântica
+    - Ideal para Acessibilidade
+
+    Atributos especiais
+    - disable
+        - desabilita todos os campos agrupados
+        - dados são serão enviados ao submeter o form
+
+    - form
+        - o id  de um  formulário a qual o fieldset pertence
+        - não precisa estar dentro do form
+    
+    - name
+        - nome do grupo
+
+
+    Elemento <legend>
+    - Nome do agrupamento
+    - Primeiro elemento dentro do fieldset
+
+
+-->
+<form action="">
+    <fieldset form="nome" name="mensagem">
+        <legend>Mensagem</legend>
+        <label for="nome">Nome</label>
+        <input id="nome" type="text"><br>
+
+        <label for="nome">Email</label>
+        <input id="nome" type="email">
+    </fieldset>
+</form>
+
+
+<!-- Elemento  <label>
+    
+    - Associar e identificar  uma ou mais tags de entrada de dados
+    - Acessibilidade
+    - É possível clique para mudança do foco de entrada de dados
+
+    Atributos
+    - for
+        - para fazer conexão estre o label e a tag de entrada de dados
+        - é feita via id do input
+        - só funciona com elementos específicos:
+            - button, input (not hidden), meter, output, progress, textarea, select 
+
+-->
+
+<label for="">
+    Nome
+    <input type="text">
+</label>
+
+
+
+<!-- Elemento <button>
+
+    Atributos:
+     - type
+        - submit
+        - reset
+        - button
+    
+    - autofocus
+    - disabble
+    - name
+    - value
+    - form
+
+-->
+<button>Enviar</button>
+
+
+  
 <!--
     <button>
 
@@ -25,18 +155,3 @@
 
 -->
 
-<!-- su-->
-<body>
-    
-    <form action="">
-        <!-- submit-->
-        <input type="text">
-        <button type="submit">Enviar</button>
-
-          <!-- submit-->
-          <input type="text">
-          <button type="submit">Enviar</button>
-    </form>
-  
-</body>
-</html>
