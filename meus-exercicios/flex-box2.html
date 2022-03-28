@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex Box Exercicios</title>
+
+    <style>
+
+        body{
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+            background-color: rgb(255, 221, 109);
+        }
+
+        .container{
+            display: flex;
+            justify-content: center;
+            gap: 20px 20px;
+            flex-wrap: wrap;
+            width: 100vw;
+            height: 100vh;
+            margin-top: 50px;
+        
+        }
+
+
+
+        .card{
+            background-color: white;
+            width: 300px;
+            height: 450px;
+            border-radius: 20px;
+            box-shadow: 5px 5px 15px rgba(175, 134, 1, 0.582);
+          
+        }
+        img{
+            width: 300px;
+            border-radius: 20px 20px 0 0 ;
+
+        }
+
+        p {
+            font-size: 0.9em;
+        }
+
+        h1, p  {
+            padding: 0 20px 0 20px ;
+        }
+
+        button {
+            width: 200px;
+            height: 40px;
+            background-color: rgb(255, 153, 0);
+            border: none;
+            border-radius: 50px;
+            color: white;
+            cursor: pointer;
+            margin-top: 20px;
+            margin-left: 45px;
+        }
+
+        button:hover{
+            background-color: rgb(218, 132, 3);
+        }
+
+        .nav{
+            display: flex;
+            justify-content: end;
+            background-color: blue;
+        }
+
+        ul{ 
+            display: flex;
+            list-style: none;
+            margin-right: 40px;
+            
+
+        }
+
+        a {
+            color: white;
+            text-decoration: none;
+            font-family: Arial, Helvetica, sans-serif;
+            padding: 16px 20px;
+
+        }
+
+        a:hover{
+            background-color: rgb(1, 1, 185);
+            padding: 16px 20px;
+
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <section class="nav">
+        <ul>
+            <li> <a href="">Home</a></li>
+            <li> <a href="">About</a></li>
+            <li> <a href="">Products</a></li>
+            <li> <a href="">Contact</a></li>
+        </ul>
+    </section>
+</header>
+
+
+    <section class="container">
+        <div class="card">
+            <img src="images/abacate.jpg" alt="imagem abacate">
+            <h1>Abacate Recheado</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus magni accusamus accusantium qui distinctio obcaecati doloremque excepturi earum soluta saepe! Quae vero sapiente magni saepe dolor dicta reiciendis voluptates nostrum.</p>
+            <button>VER RECEITA</button>
+        </div>
+
+        <div class="card">
+            <img src="images/bolo.jpg" alt="imagem bolo">
+            <h1>Bolo de aveia</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus magni accusamus accusantium qui distinctio obcaecati doloremque excepturi earum soluta saepe! Quae vero sapiente magni saepe dolor dicta reiciendis voluptates nostrum.</p>
+            <button>VER RECEITA</button>
+        </div>
+
+        <div class="card">
+            <img src="images/omelete.jpg" alt="imagem omelete">
+            <h1>Omelete de presunto</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus magni accusamus accusantium qui distinctio obcaecati doloremque excepturi earum soluta saepe! Quae vero sapiente magni saepe dolor dicta reiciendis voluptates nostrum.</p>
+            <button>VER RECEITA</button>
+        </div>
+        <div class="card">
+            <img src="images/omelete.jpg" alt="imagem omelete">
+            <h1>Omelete de presunto</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Doloribus magni accusamus accusantium qui distinctio obcaecati doloremque excepturi earum soluta saepe! Quae vero sapiente magni saepe dolor dicta reiciendis voluptates nostrum.</p>
+            <button>VER RECEITA</button>
+        </div>
+            
+       
+    </section>
+    
+</body>
+</html>
