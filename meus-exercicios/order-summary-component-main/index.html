@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+    
+  <title>Frontend Mentor | Order summary card</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap" rel="stylesheet">
+  
+  <style>
+
+    :root{
+      --Pale-blue: hsl(225, 100%, 94%);
+      --Bright-blue: hsl(245, 75%, 52%);
+
+      --Very-pale-blue: hsl(225, 100%, 98%);
+      --Desaturated-blue: hsl(224, 23%, 55%);
+      --Dark-blue: hsl(223, 47%, 23%);
+
+     }
+
+    body {
+      font-family: 'Red Hat Display', sans-serif;
+      background-image: url(images/pattern-background-desktop.svg);
+      background-repeat: no-repeat;
+      background-color: var(--Pale-blue);
+      
+    }
+
+    h1{
+      font-family: 'Red Hat Display', sans-serif;
+      font-size: 1.5em;
+      font-weight: 900;
+      color: var(--Dark-blue);
+      
+    }
+
+    h2{
+      font-family: 'Red Hat Display', sans-serif;
+      font-weight: 600;
+      font-size: 1.0em;
+      color: var(--Dark-blue);
+      margin: 0px;
+    }
+    p{
+      font-family: 'Red Hat Display', sans-serif;
+      font-size: 16px;
+      color: var(--Desaturated-blue);
+      margin: 0px;
+    }
+
+    .container{
+      display: flex;
+      justify-content: center;
+     
+    }
+
+    .main-card{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      background-color: white;
+      width: 400px;
+      height: 620px;
+      border-radius: 20px;
+        
+    }
+
+    .card-plan{
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      width: 330px;
+      height: 80px;
+      background-color: var(--Very-pale-blue);
+      border-radius: 10px;
+      margin-top: 30px;
+      margin-bottom: 30px;
+      
+
+    }
+
+    .main-image {
+      border-radius: 20px 20px 0 0;
+      width: 400px;
+    }
+
+    .main-text{
+      width: 300px;
+      text-align: center;
+      margin-top: 20px;
+      
+    }
+
+    .price {
+      width: 150px;
+      
+    }
+
+    a{
+      font-family: ;
+      color: var(--Bright-blue);
+      font-size: 0.9em;
+      font-weight: 700;
+      margin-right: 10px;
+    }
+
+    .payment{
+      display: block;
+    }
+
+    .main-button{
+      display: block;
+      background-color: var(--Bright-blue);
+      border: none;
+      border-radius: 7px;
+      width: 330px;
+      height: 40px;
+      font-weight: 600;
+      color: white;
+      cursor: pointer;
+      box-shadow: 5px 5px 5px 5px var(--Pale-blue);
+      margin-bottom: 15px;
+
+    }
+    .disable-button{
+      display: block;
+      border: none;
+      background-color: transparent;
+      border-radius: 7px;
+      width: 330px;
+      height: 40px;
+      font-weight: 600;
+      color: var(--Dark-blue);
+      cursor: pointer;
+      
+
+    }
+
+    
+  </style>
+</head>
+<body>
+
+  <section class="container">
+    <section class="main-card">
+        
+        <img class="main-image" src="images/illustration-hero.svg" alt="imagem hero">
+        
+        <div class="main-text">
+          <h1>Order Summary</h1>
+          <p>You can now listen to millions of songs, audiobooks, and podcasts on any
+            device anywhere you like!</p>
+        </div>
+
+        <section class="card-plan">
+          <img src="images/icon-music.svg" alt="icone de música">
+          <div class="price">
+            <h2>Annual Plan</h2>
+            <p>$59.99/year</p>
+          </div>
+          <a href="">Change</a>
+        </section>
+
+        <section class="payment">
+          <button class="main-button">Proceed to Payment</button>
+          <button class="disable-button">Cancel Order</button>
+        </section>
+
+    </section>
+
+
+  </section>
+
+  
+
+ 
+
+  
+  
+
+  
+
+  
+  
+  
+  
+</body>
+</html>
